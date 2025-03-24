@@ -1,3 +1,5 @@
+<img height="100px" width="100px" src="./profile_image.png" />
+
 # Committed to Code
 
 > Repositories designed to last.
