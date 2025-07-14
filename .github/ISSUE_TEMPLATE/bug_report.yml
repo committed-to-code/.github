@@ -1,0 +1,81 @@
+name: 🐛 Bug Report
+description: Report an issue or unexpected behavior.
+title: "[BUG]: "
+labels: ["bug", "triage"]
+assignees: [] # Consider leaving this empty or assigning a default team/user
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve by reporting a bug! Please read through the guidelines and fill out the sections below.
+
+        Before submitting, please search existing issues to see if your bug has already been reported.
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Describe the Problem
+      description: A clear and concise description of what the problem is. What did you expect to happen, and what actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide detailed steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of the software/component are you using? (e.g., v1.0.0, commit hash)
+      placeholder: e.g., v1.2.3 or 1a2b3c4
+    validations:
+      required: true
+
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating System
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+        - Other (Please specify in "Additional Context")
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots-logs
+    attributes:
+      label: Screenshots or Logs
+      description: |
+        If applicable, add screenshots to help explain your problem. For code/error logs, please wrap them in triple backticks (```) for proper formatting.
+      placeholder: |
+        ```
+        Your code or log here
+        ```
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: |
+        Add any other context about the problem here. This could include:
+        - Browser type and version (if applicable)
+        - Device information
+        - Any specific configurations
+        - Potential workarounds
+        - Whether the issue is intermittent or consistent
