@@ -1,0 +1,56 @@
+name: ✨ Feature Request
+description: Suggest a new idea or enhancement for the project.
+title: "[FEAT]: "
+labels: ["feature-request", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! We appreciate your input.
+
+        Before submitting, please search existing issues to ensure this feature hasn't been requested before.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Clearly describe the feature you'd like to see implemented. What problem does it solve or what value does it add?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-solution
+    attributes:
+      label: Problem Solved / Proposed Solution
+      description: |
+        Briefly explain the problem this feature aims to solve.
+        If you have a proposed solution or ideas on how this feature could be implemented, please describe them here.
+      placeholder: |
+        * **Problem:** Currently, users cannot... This causes...
+        * **Proposed Solution:** Implement a new button that does X, which would allow users to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases / Examples
+      description: |
+        Provide specific examples or use cases where this feature would be beneficial.
+        How would users interact with it?
+      placeholder: |
+        1. As a [type of user], I want to [goal] so that [reason].
+        2. When I click on X, I expect Y to happen.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: |
+        Add any other relevant information, such as:
+        - Mockups or sketches (if applicable)
+        - Links to similar features in other tools
+        - Any potential challenges or considerations
+        - How important is this feature to you? (e.g., nice-to-have, critical)
